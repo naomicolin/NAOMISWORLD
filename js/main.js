@@ -2,7 +2,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js';
-import { DragControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/DragControls.js';
 
 // Initialize scene, camera, renderer, and clock
 let scene, camera, renderer, clock;
