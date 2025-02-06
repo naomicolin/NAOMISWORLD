@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAOMI'S WORLD</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ////////NAOMI ICON //////////// -->
+    <link rel="icon" type="image/png" href="images/NAOMIICON4.png"> 
+
+
+
+
+    <!-- use an import map to link to the Three.js CDN -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/scene1.js"></script>
+    <script type="module" src="js/scene2.js"></script>
+    <script type="module" src="js/scene4.js"></script>
+    <script type="module" src="js/scene5.js"></script>
+    <script type="module" src="js/scene6.js"></script>
+    
+    <!-- //////////////////////////////////////////////////////////////////////////////// -->
+
+
+    
+</head>
+
+
+<body>
+  
+
+    
+
+
+      <main>
+        
+        <!-- /////////MAIN CONTAINER/////// -->
+        <div id="scene-container"></div>
+        
+        <!-- /////////CLICK FOR TV CONTAINER/////// -->
+         <div id="scene-container1"></div>
+
+        <!-- /////////MARQUEES/////// -->
+         <div class="marquee marquee1">
+          <p>NAOMI'S LATEST. NAOMI'S LATEST. NAOMI'S LATEST. NAOMI'S LATEST. NAOMI'S LATEST. NAOMI'S LATEST. NAOMI'S LATEST. NAOMI'S LATEST.</p>
+      </div>
+    </div>
+
+      <div class="marquee marquee2">
+        <p>VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME.</p>
+    </div>
+  </div>
+
+
+      <!-- /////////NAOMI VISION ABOUT CONTAINER/////// -->
+       <div id="scene-container2"></div>
+
+
+
+       <!-- /////////ABOUT INFO/////// -->
+       <href="">
+        <img src="/images/ABOUTTEXT.png" alt="Clickable Image" id="clickable-image1">
+    &nbsp;&nbsp;
+
+
+<!-- //////////////////////////////////EMBEDDED VIDEO////////////////////////////////////////////// -->
+<video id="my-video" controls width="100%" autoplay muted loop>
+  <source src="images/NVGAMEDEMO.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+
+
+    
+    <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
+    <a href="elements.html">
+        <img src="/images/ELEMENTS3.png" alt="Clickable Image" id="clickable-image2">
+    </a>&nbsp;&nbsp;
+
+       
+     
+
+
+    <!-- /////////BASKETS & PED/////// -->
+     <href=".html">
+      <img src="/images/ELEMENTS3.png" alt="Clickable Image" id="clickable-image3">
+  &nbsp;&nbsp;
+    
+
+
+    
+
+
+
+       <!-- /////////RE-ARRANGE ELEMENTS CONTAINER/////// -->
+        <div id="scene-container3"></div>
+
+        <!-- /////////NAOMI VISION TV CONTAINER/////// -->
+        <div id="scene-container4"></div>
+
+
+
+
+
+ 
+
+
+      </main>
+
+<!-- //////////////////////////////SLIDESHOW////////////////////////////////////////////////// -->
+        
+<div id="slideshow-container">
+  <img class="mySlides" src="images/NV1.png">
+  <img class="mySlides" src="images/NV2.png">
+  <img class="mySlides" src="images/NV3.png">
+  <img class="mySlides" src="images/NV4.png">
+  <img class="mySlides" src="images/NV5.png">
+  
+   <!-- Navigation Arrows -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////COME BACK SOON ///////////////////// -->
+      <div class="marquee marquee5">
+        <p>COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON.</p>
+    </div>
+    </div>     
+  
+    
+</body>
+</html>
+
+

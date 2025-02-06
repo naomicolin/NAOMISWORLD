@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'A4SPEED'; /* Specify a name for your font family */
+    src: url('A4SPEED.TTF') format('truetype'), /* Primary source */
+         url('A4SPEED.WOFF') format('woff'); /* Fallback source */
+}
+
+/* //////ABOUT VISION////////////////////// */
+#clickable-image1 {
+    width: 1000px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 1650px;  /* Distance from the top */
+    left: 530px;  /* Distance from the left */
+    
+    transform: scale(0.7); /* Reduces the image to 80% of its original size */
+
+}
+
+/* //////ELEMENTS////////////////////// */
+#clickable-image2 {
+    width: 1000px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 2800px;  /* Distance from the top */
+    left: 250px;  /* Distance from the left */
+    cursor: pointer;  /* Makes it clear it's clickable */
+    transform: scale(1.5);
+}
+
+/* //////3RD IMAGE////////////////////// */
+#clickable-image3 {
+    width: 1000px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3900px;  /* Distance from the top */
+    left: 250px;  /* Distance from the left */
+    transform: scale(1);
+}
+
+/* //////PED & TABLE////////////////////// */
+#clickable-image4 {
+    width: 1000px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 400px;  /* Distance from the top */
+    left: 250px;  /* Distance from the left */
+    cursor: pointer;  /* Makes it clear it's clickable */
+    transform: scale(1);
+}
+
+#clickable-image5 {
+    width: 1000px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 5200px;  /* Distance from the top */
+    left: 250px;  /* Distance from the left */
+    cursor: pointer;  /* Makes it clear it's clickable */
+    transform: scale(1);
+
+    
+}
+
+
+
+
+
+/* /////////////MARQUEE////////// */
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+/* ///////NAOMI'S LATEST & VR GAME////////// */
+.marquee1 p {
+    margin: 0;
+    line-height: 90px;
+    font-size: 90px;
+    font-family: 'A4SPEED', sans-serif; 
+    color: #e7039d;
+    animation: marquee1 10s linear infinite;
+}
+
+.marquee2 p {
+    margin: 0;
+    line-height: 50px;
+    font-size: 50px;
+    font-family: 'A4SPEED', sans-serif; 
+    color: #e7039d;
+    animation: marquee2 25s linear infinite; 
+}
+
+
+/* ///////BUY NOW CRY LATER////////// */
+.marquee3 p {
+    margin: 0;
+    line-height: 100px;
+    font-size: 90px;
+    font-family: 'A4SPEED', sans-serif; 
+    color: #37d813;
+    animation: marquee1 10s linear infinite;
+}
+
+.marquee4 p {
+    line-height: 5px;
+    font-size: 50px;
+    font-family: 'A4SPEED', sans-serif; 
+    color: #37d813;
+    animation: marquee2 25s linear infinite; 
+}
+
+
+
+
+/* ///////COME BACK SOON////////// */
+.marquee5 p {
+    
+    line-height: 100px;
+    font-size: 50px;
+    font-family: 'A4SPEED', sans-serif; 
+    color: #37d813;
+    animation: marquee2 25s linear infinite; 
+
+    
+}
+
+
+
+
+
+
+
+
+/* Keyframes for first marquee animation */
+@keyframes marquee1 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+@keyframes marquee2 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+@keyframes marquee3 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+@keyframes marquee4 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes marquee5 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* This sets the minimum height to the full viewport */
+    width: 100%; /* Ensures the body takes full width */
+    
+    
+}
+
+
+/* /////MAIN//// */
+#scene-container {
+    width: 100vw; /* Full viewport width */
+    height: 101vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    background-color: transparent; /* Makes the container's background transparent */
+
+    /* overflow-y: auto; Enables vertical scrolling */
+
+}
+
+
+
+/* /////MAIN PAGE//// */
+#scene-elementscontainer {
+    width: 100vw; /* Full viewport width */
+    height: 101vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    background-color: #37d813; 
+
+}
+
+
+/* /////CLICK TV//// */
+#scene-container1 {
+    width: 100vw; /* Full viewport width */
+    height: 80vh; /* Set a fixed height greater than 100vh to enable scrolling */
+}
+
+/* /////NAOMI VISION//// */
+#scene-container2 {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    
+    
+    background-color: transparent; /* Makes the container's background transparent */
+
+}
+
+
+/* /////NAOMI TVS//// */
+#scene-container3 {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Full viewport width */
+    height: 70vh; /* Set a fixed height greater than 100vh to enable scrolling */
+   
+
+}
+
+/* /////NAOMI TVS//// */
+#scene-container4 {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Full viewport width */
+    height: 70vh; /* Set a fixed height greater than 100vh to enable scrolling */
+   
+
+}
+
+
+/* /////MAIN PAGE//// */
+#scene-elementscontainer {
+    width: 100vw; /* Full viewport width */
+    height: 101vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    background-color: #e461c1; 
+
+}
+
+
+
+
+
+
+
+
+/* ////VIDEO/////////////////////////////////////////// */
+
+/* Video container styling */
+#my-video {
+    width: 100%;        /* Responsive width */
+    max-width: 1000px;  /* Maximum width */
+    height: auto;       /* Maintain aspect ratio */
+    margin-top: -210px; /* Moves the video up by 100px */
+    display: block;     /* Align block */
+    margin-left: auto;  /* Centering the video horizontally */
+    margin-right: auto; /* Centering the video horizontally */
+    border: 10px solid #cc1a97; /* Adding a green border */
+    border-radius: 100px;       /* Rounded corners with large radius */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Style for video controls */
+video::-webkit-media-controls {
+    color: #fff; /* Control color */
+    background-color: #333; /* Background color */
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider {
+    filter: hue-rotate(180deg); /* Color shift for play button and volume */
+}
+
+/* Customizing default browser video controls (optional) */
+video::--webkit-media-controls-panel {
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent black background */
+    color: #fff; /* White text for time and other control elements */
+}
+
+
+
+
+/* <!-- /////////SLIDESHOW///////////////////////////////////////// --> */
+#slideshow-container {
+    max-width: 700px; /* Adjust based on your preference */
+    position: relative;
+    margin: 20px auto; /* Centering the container */
+    margin-top: 680px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%; /* Adjust if you need a different size */
+    height: auto;
+    
+}
+
+
+
+/* Style for navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px; /* Adjust this value based on the size of the arrows */
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Positioning the arrows */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Hover effects for arrows */
+.prev:hover, .next:hover {
+    background-color: rgba(21, 165, 64, 0.8);
+}
+
+
+
