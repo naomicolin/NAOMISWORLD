@@ -55,8 +55,6 @@ function init() {
     // Load models with their sounds and animations
     loadModelAndSound('GLTF/WELCOMENAOMI.gltf', [12, 50, 0], [15, 15, 15]); /// 3D DESIGNER
     loadModelAndSound('GLTF/BLACKHEADSPIN.GLTF', [20, -38, 0], [6, 6, 6]); ////BLACK HEAD
-    
-   
     loadModelAndSound('GLTF/DESIGNERDESCRIP.gltf', [-115, -100, 0], [12, 12, 12]); /// 3D DESIGNER
     
 
