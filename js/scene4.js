@@ -45,8 +45,8 @@ function init() {
     audioLoader = new THREE.AudioLoader();
 
     // Load models with their sounds and animations
-    loadModelAndSound('/GLTF/NAOMIVISIONTV.gltf', [-20, -1, 0], [5, 5, 5]);
-    loadModelAndSound('/GLTF/NAOMIVISIONTV.gltf', [1, -1, 0], [5, 5, 5]);
+    loadModelAndSound('/GLTF/visiontv.gltf', [-20, -1, 0], [5, 5, 5]);
+    loadModelAndSound('/GLTF/visiontv.gltf', [1, -1, 0], [5, 5, 5]);
 
     
 

@@ -1,13 +1,11 @@
 @font-face {
-    font-family: 'A4SPEED'; /* Specify a name for your font family */
-    src: url('A4SPEED.TTF') format('truetype'), /* Primary source */
-         url('A4SPEED.WOFF') format('woff'); /* Fallback source */
+    font-family: 'A4SPEED';
+    src: url('A4SPEED.WOFF2') format('woff2'), /* Most efficient format */
+         url('A4SPEED.WOFF') format('woff'),  /* Fallback for older browsers */
+         url('A4SPEED.TTF') format('truetype'); /* Fallback for very old browsers */
+    font-weight: normal;
+    font-style: normal;
 }
-
-@font-face {
-    font-family: 'kiera';
-    src: url('fonts/a4speed.TTF') format('truetype');
-  }
 
 
 /* //////ABOUT VISION////////////////////// */
@@ -18,7 +16,7 @@
     top: 1650px;  /* Distance from the top */
     left: 530px;  /* Distance from the left */
     
-    transform: scale(0.7); /* Reduces the image to 80% of its original size */
+    transform: scale(1.2); /* Reduces the image to 80% of its original size */
 
 }
 
