@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'A4SPEED'; /* Specify a name for your font family */
-    src: url('A4SPEED.TTF') format('truetype'), /* Primary source */
-         url('A4SPEED.WOFF') format('woff'); /* Fallback source */
+    font-family: 'a4speed.ttf'; /* Specify a name for your font family */
+    src: url('a4speed.ttf.TTF') format('truetype'), /* Primary source */
+         url('a4speed.ttf') format('woff'); /* Fallback source */
 }
 
 /* //////ABOUT VISION////////////////////// */
