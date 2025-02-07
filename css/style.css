@@ -4,6 +4,12 @@
          url('A4SPEED.WOFF') format('woff'); /* Fallback source */
 }
 
+@font-face {
+    font-family: 'kiera';
+    src: url('fonts/a4speed.TTF') format('truetype');
+  }
+
+
 /* //////ABOUT VISION////////////////////// */
 #clickable-image1 {
     width: 1000px;  /* Adjust width */
