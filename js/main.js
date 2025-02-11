@@ -7,34 +7,51 @@ import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders
 let scene, camera, renderer, clock;
 let sceneContainer = document.querySelector("#scene-container");
 
-
-
-
 // Audio and listener setup
 let listener, audioLoader;
 
 // Animation mixers
 let mixers = [];
 
-
 // Draggable objects array
 let draggableObjects = [];
 
+// Initialize the Loading Manager
+const loadingManager = new THREE.LoadingManager();
 
+// Define the loading screen element
+const loadingScreen = document.getElementById('loading-screen');
+
+// Set up callback functions for the Loading Manager
+loadingManager.onStart = function (url, itemsLoaded, itemsTotal) {
+    console.log(`Started loading file: ${url}. Loaded ${itemsLoaded} of ${itemsTotal} files.`);
+    // Display the loading screen when loading starts
+    loadingScreen.style.display = 'block';
+};
+
+loadingManager.onLoad = function () {
+    console.log('All assets loaded.');
+    // Hide the loading screen when all assets are loaded
+    loadingScreen.style.display = 'none';
+};
+
+loadingManager.onProgress = function (url, itemsLoaded, itemsTotal) {
+    console.log(`Loading file: ${url}. Loaded ${itemsLoaded} of ${itemsTotal} files.`);
+};
+
+loadingManager.onError = function (url) {
+    console.log(`There was an error loading ${url}`);
+};
 
 function init() {
     scene = new THREE.Scene();
     clock = new THREE.Clock();
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
-    
-
-    
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor(0x000000, 0); // Make background of the canvas transparent
     sceneContainer.appendChild(renderer.domElement);
-    
 
     // Lighting
     const lightRight = new THREE.DirectionalLight(0xffffff, 5);
@@ -53,19 +70,12 @@ function init() {
     audioLoader = new THREE.AudioLoader();
 
     // Load models with their sounds and animations
-    loadModelAndSound('GLTF/WELCOMENAOMI.gltf', [12, 50, 0], [15, 15, 15]); /// 3D DESIGNER
-    loadModelAndSound('GLTF/BLACKHEADSPIN.gltf', [20, -38, 0], [6, 6, 6]); ////BLACK HEAD
-    loadModelAndSound('GLTF/DESIGNERDESCRIP.gltf', [-115, -100, 0], [12, 12, 12]); /// 3D DESIGNER
-    
-
-   
+    loadModelAndSound('GLTF/WELCOMENAOMI.gltf', [12, 50, 0], [15, 15, 15]); // 3D DESIGNER
+    loadModelAndSound('GLTF/BLACKHEADSPIN.gltf', [20, -38, 0], [6, 6, 6]); // BLACK HEAD
+    loadModelAndSound('GLTF/DESIGNERDESCRIP.gltf', [-115, -100, 0], [12, 12, 12]); // 3D DESIGNER
 
     animate();
 }
-
-
-
-
 
 function animate() {
     requestAnimationFrame(animate);
@@ -82,7 +92,8 @@ function onWindowResize() {
 
 window.addEventListener('resize', onWindowResize, false);
 
-const loader = new GLTFLoader();
+// Pass the loadingManager to the GLTFLoader
+const loader = new GLTFLoader(loadingManager);
 
 function loadModelAndSound(modelUrl, position, scale, soundUrl) {
     loader.load(modelUrl, function (gltf) {

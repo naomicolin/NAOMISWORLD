@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAOMI'S WORLD</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="slideshow.js"></script>
+
 
     <!-- ////////NAOMI ICON //////////// -->
     <link rel="icon" type="image/png" href="images/NAOMIICON4.png"> 
@@ -33,6 +39,8 @@
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
 
+
+    
     
 </head>
 
@@ -41,10 +49,13 @@
   
 
     
-
+  <div id="loading-screen">
+    <span>LOADING, PLEASE WAIT.....</span>
+</div>
 
       <main>
-        
+
+    
         <!-- /////////MAIN CONTAINER/////// -->
         <div id="scene-container"></div>
         
@@ -63,64 +74,42 @@
   </div>
 
 
-      <!-- /////////NAOMI VISION ABOUT CONTAINER/////// -->
-       <div id="scene-container2"></div>
+      <!-- /////////ABOUT INFO/////// -->
+       <!-- /////////NAOMI VISION ABOUT CONTAINER/////// -->
+       <div id="scene-container2">
+          
+    <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
+    <img src="images/about.png"id="clickable-image3">
+
+       </div>
 
 
 
-       <!-- /////////ABOUT INFO/////// -->
-       <img src="ABOUTTEXT.png">
-    
-
-
-<!-- //////////////////////////////////EMBEDDED VIDEO////////////////////////////////////////////// -->
-<video id="my-video" controls width="100%" autoplay muted loop>
+      <!-- //////////////////////////////////EMBEDDED VIDEO////////////////////////////////////////////// -->
+<video id="my-video" autoplay muted loop>
   <source src="images/NVGAMEDEMO.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
+   <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
+   <a href="elements.html">
+    <img src="images/clickonelements.png" alt="Clickable Image" id="clickable-image2">
 
 
 
-
-
-
-    
-    <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
-    <a href="elements.html">
-        <img src="images/ELEMENTS3.png" alt="Clickable Image" id="clickable-image2">
-    
-
-       
-     
-
-
-    <!-- /////////BASKETS & PED/////// -->
-     <href=".html">
-      <img src="elements1.png" alt="Clickable Image" id="clickable-image3">
-  &nbsp;&nbsp;
-    
-
-
-    
-
-
-
-
-
- 
 
 
       </main>
 
 <!-- //////////////////////////////SLIDESHOW////////////////////////////////////////////////// -->
-        
-<div id="slideshow-container">
+  
+
+<!-- <div id="slideshow-container">
   <img class="mySlides" src="images/NV1.png">
   <img class="mySlides" src="images/NV2.png">
   <img class="mySlides" src="images/NV3.png">
   <img class="mySlides" src="images/NV4.png">
-  <img class="mySlides" src="images/NV5.png">
+  <img class="mySlides" src="images/NV5.png"> -->
   
    <!-- Navigation Arrows -->
    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -157,11 +146,13 @@
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
 
-
 <!-- /////////COME BACK SOON ///////////////////// -->
       <div class="marquee marquee5">
-        <p>COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON.</p>
-    </div>
+        <p>COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON. COME BACK SOON.
+        
+        </p>
+  
+  </div>
     </div>     
   
     

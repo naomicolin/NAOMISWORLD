@@ -33,7 +33,7 @@ function init() {
     scene.add(lightLeft);
 
     // Camera setup
-    camera.position.z = 7;
+    camera.position.z = 10;
 
     // Audio setup
     listener = new THREE.AudioListener();
@@ -41,7 +41,7 @@ function init() {
     audioLoader = new THREE.AudioLoader();
 
     // Load models with their sounds and animations
-    loadModelAndSound('GLTF/CLICKCOLORSTIMY.gltf', [20, -12, 0], [2, 2, 2]);
+    loadModelAndSound('gltf/clicktvs.gltf', [28.5, -10, 0], [2, 2, 2]);
     
 
     animate();

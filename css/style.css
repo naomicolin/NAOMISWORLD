@@ -1,11 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* This sets the minimum height to the full viewport */
+    width: 100%; /* Ensures the body takes full width */
+    
+    
+}
+
 @font-face {
-    font-family: 'A4SPEED';
-    src: url('A4SPEED.WOFF2') format('woff2'), /* Most efficient format */
-         url('A4SPEED.WOFF') format('woff'),  /* Fallback for older browsers */
-         url('A4SPEED.TTF') format('truetype'); /* Fallback for very old browsers */
+    font-family: 'a4speed';
+    src: url('a4speed.eot'); /* IE9 Compat Modes */
+    src: url('a4speed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('a4speed.woff2') format('woff2'), /* Super Modern Browsers */
+         url('a4speed.woff') format('woff'), /* Modern Browsers */
+         url('a4speed.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('a4speed.svg#a4speed') format('svg'); /* Legacy iOS */
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 /* //////ABOUT VISION////////////////////// */
@@ -25,44 +38,54 @@
     width: 1000px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 2800px;  /* Distance from the top */
-    left: 250px;  /* Distance from the left */
+    top: 4800px;  /* Distance from the top */
+    right: 700px;  /* Distance from the left */
     cursor: pointer;  /* Makes it clear it's clickable */
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
-/* //////3RD IMAGE////////////////////// */
+/* //////ABOUT////////////////////// */
 #clickable-image3 {
     width: 1000px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3900px;  /* Distance from the top */
-    left: 250px;  /* Distance from the left */
-    transform: scale(1);
+    top: 3800px;  /* Distance from the top */
+    right: 650px;
+    transform: scale(1.5);
 }
 
-/* //////PED & TABLE////////////////////// */
-#clickable-image4 {
-    width: 1000px;  /* Adjust width */
-    height: auto;  /* Keeps aspect ratio */
-    position: absolute;  /* Allows precise positioning */
-    top: 400px;  /* Distance from the top */
-    left: 250px;  /* Distance from the left */
-    cursor: pointer;  /* Makes it clear it's clickable */
-    transform: scale(1);
-}
 
-#clickable-image5 {
-    width: 1000px;  /* Adjust width */
-    height: auto;  /* Keeps aspect ratio */
-    position: absolute;  /* Allows precise positioning */
-    top: 5200px;  /* Distance from the top */
-    left: 250px;  /* Distance from the left */
-    cursor: pointer;  /* Makes it clear it's clickable */
-    transform: scale(1);
+#loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e7039d;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'a4speed', sans-serif;
+    font-size: 80px;
+    text-align: center;
+  }
 
-    
-}
+  #loading-screen2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e7039d;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'a4speed', sans-serif;
+    font-size: 80px;
+    text-align: center;
+  }
+  
+
 
 
 
@@ -82,7 +105,7 @@
     margin: 0;
     line-height: 90px;
     font-size: 90px;
-    font-family: 'A4SPEED', sans-serif; 
+    font-family: 'a4speed', sans-serif; 
     color: #e7039d;
     animation: marquee1 10s linear infinite;
 }
@@ -91,7 +114,7 @@
     margin: 0;
     line-height: 50px;
     font-size: 50px;
-    font-family: 'A4SPEED', sans-serif; 
+    font-family: 'a4speed', sans-serif; 
     color: #e7039d;
     animation: marquee2 25s linear infinite; 
 }
@@ -102,7 +125,7 @@
     margin: 0;
     line-height: 100px;
     font-size: 90px;
-    font-family: 'A4SPEED', sans-serif; 
+    font-family: 'a4speed', sans-serif; 
     color: #37d813;
     animation: marquee1 10s linear infinite;
 }
@@ -110,7 +133,7 @@
 .marquee4 p {
     line-height: 5px;
     font-size: 50px;
-    font-family: 'A4SPEED', sans-serif; 
+    font-family: 'a4speed', sans-serif; 
     color: #37d813;
     animation: marquee2 25s linear infinite; 
 }
@@ -119,16 +142,21 @@
 
 
 /* ///////COME BACK SOON////////// */
+
 .marquee5 p {
-    
-    line-height: 100px;
-    font-size: 50px;
-    font-family: 'A4SPEED', sans-serif; 
+    font-size: 130px;
+    font-family: 'a4speed', sans-serif;
     color: #37d813;
-    animation: marquee2 25s linear infinite; 
+    animation: marquee2 25s linear infinite;
+    margin: 0;
+    padding: 850px 0 0 0; /* Adds 20px padding to the top */
+}
+
+  
+  
 
     
-}
+
 
 
 
@@ -139,14 +167,14 @@
 
 /* Keyframes for first marquee animation */
 @keyframes marquee1 {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 
 @keyframes marquee2 {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
 }
 @keyframes marquee3 {
     from { transform: translateX(100%); }
@@ -175,14 +203,7 @@
 
 
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* This sets the minimum height to the full viewport */
-    width: 100%; /* Ensures the body takes full width */
-    
-    
-}
+
 
 
 /* /////MAIN//// */
@@ -265,13 +286,12 @@ html, body {
 
 /* Video container styling */
 #my-video {
-    width: 100%;        /* Responsive width */
-    max-width: 1000px;  /* Maximum width */
-    height: auto;       /* Maintain aspect ratio */
-    margin-top: -210px; /* Moves the video up by 100px */
-    display: block;     /* Align block */
-    margin-left: auto;  /* Centering the video horizontally */
-    margin-right: auto; /* Centering the video horizontally */
+    width: 1500px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 4800px;  /* Distance from the top */
+    left: 300px;  /* Distance from the left */
+
     border: 10px solid #cc1a97; /* Adding a green border */
     border-radius: 100px;       /* Rounded corners with large radius */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
@@ -298,6 +318,46 @@ video::--webkit-media-controls-panel {
 
 
 /* <!-- /////////SLIDESHOW///////////////////////////////////////// --> */
+
+
+#slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+
+
+
+  
 #slideshow-container {
     max-width: 700px; /* Adjust based on your preference */
     position: relative;
