@@ -37,7 +37,7 @@ function init() {
     scene.add(lightLeft);
 
     // Camera setup
-    camera.position.z = 70;
+    camera.position.z = 100;
 
     // Audio setup
     listener = new THREE.AudioListener();

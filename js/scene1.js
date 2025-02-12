@@ -16,8 +16,8 @@ let mixers = [];
 function init() {
     scene = new THREE.Scene();
     clock = new THREE.Clock();
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 5000);
-    camera.position.set(0, 0, 50);
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
+   
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -33,7 +33,7 @@ function init() {
     scene.add(lightLeft);
 
     // Camera setup
-    camera.position.z = 10;
+    camera.position.z = 100;
 
     // Audio setup
     listener = new THREE.AudioListener();
@@ -41,7 +41,7 @@ function init() {
     audioLoader = new THREE.AudioLoader();
 
     // Load models with their sounds and animations
-    loadModelAndSound('gltf/clicktvs.gltf', [28.5, -10, 0], [2, 2, 2]);
+    loadModelAndSound('gltf/clicktvs.gltf', [277, -90, 0], [19, 19, 19]);
     
 
     animate();
