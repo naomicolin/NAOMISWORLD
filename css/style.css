@@ -94,7 +94,7 @@ html, body {
 
 /* ///////NAOMI'S LATEST & VR GAME////////// */
 .marquee1 p {
-    line-height: 10px;
+    margin: 0;
     font-size: 90px;
     font-family: 'a4speed', sans-serif; 
     color: #e7039d;
@@ -102,8 +102,8 @@ html, body {
 }
 
 .marquee2 p {
-    line-height: 5px;
-    font-size: 50px;
+    margin: 0;
+    font-size: 60px;
     font-family: 'a4speed', sans-serif; 
     color: #e7039d;
     animation: marquee2 25s linear infinite; 
