@@ -219,6 +219,16 @@ html, body {
     transform: scale(8);
 }
 
+/* //////under//////////// */
+#clickable-image18 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 770px;  /* Distance from the top */
+    right: 665px;
+    transform: scale(2.5);
+}
+
 
 
 
