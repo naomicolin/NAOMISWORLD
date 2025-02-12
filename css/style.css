@@ -55,9 +55,8 @@ html, body {
 /* //////ABOUT TEXT////////////////////// */
 #clickable-image3 {
     width: 100px;  /* Adjust width */
-    height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 1950px;  /* Distance from the top */
+    top: 1875px;  /* Distance from the top */
     right: 650px;
     transform: scale(6.5);
 }
@@ -79,8 +78,8 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3150px;  /* Distance from the top */
-    right: 500px;
+    top: 2895px;  /* Distance from the top */
+    right: 450px;
     transform: scale(9);
 }
 
@@ -89,11 +88,33 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3350px;  /* Distance from the top */
-    right: 1250px;
-    transform: scale(10);
+    top: 3010px;  /* Distance from the top */
+    right: 985px;
+    transform: scale(7);
 }
 
+
+/* /////////////ABOUT TEXT////////////////// */
+#text-box {
+    line-height: 1.;    /* Adjust value as needed */
+    font-family: 'A4Speed', sans-serif;
+    font-size: 1.4rem; /* Adjust as needed */
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto; /* Center it below scene-container2 */
+    margin-top: 325px;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.text-title {
+    font-family: 'A4Speed', sans-serif; /* Your custom font */
+    font-size: 2.5rem; /* Adjust for larger title */
+    font-weight: bold; /* Makes the title stand out */
+    margin-bottom: 10px; /* Adds space below the title */
+    color:  #e7039d; /* Adjust color as needed */
+}
 
 
 
@@ -237,6 +258,7 @@ html, body {
     width: 100vw; /* Full viewport width */
     height: 101vh; /* Set a fixed height greater than 100vh to enable scrolling */
     background-color: #e461c1; 
+    background-color: transparent;
 
 }
 
@@ -245,16 +267,16 @@ html, body {
 #scene-container1 {
     width: 100vw; /* Full viewport width */
     height: 60vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    background-color: transparent;
 }
 
 /* /////ABOUT NAOMI VISION//// */
 #scene-container2 {
-    margin: 0;
-    padding: 0;
-    width: 100vw; /* Full viewport width */
-    height: 30vh; /* Set a fixed height greater than 100vh to enable scrolling */
-    
+    width: 80vw; /* Adjust as needed */
+    height: 10vh; /* Adjust as needed */
+    background-color: transparent;
 }
+
 
 
 
@@ -272,28 +294,32 @@ html, body {
 
 /* ///////////VIDEO & IMAGE CONTAINER/////////// */
 #media-container {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center; /* Aligns items vertically */
     justify-content: center; /* Centers items horizontally */
     gap: 20px; /* Adds spacing between video and image */
-    padding: 70px;
+    padding: 10px;
     max-width: 100%;
-    height: 1000px;
-    margin-left: 30px; /* Moves entire container to the right */
+    height: 650px;
+    margin-left: 0px; /* Moves entire container to the right */
 }
 
 
 #my-video {
+    margin: 0;
+    padding: 0;
     width: 50%; /* Adjust size as needed */
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-right: 700px; /* Moves video to the right */
-    margin-bottom: -970px; /* Moves video to the right */
+    margin-right: 600px; /* Moves video to the right */
+    margin-bottom: -200px;
 
 }
 
 #clickable-image2 {
+    margin: 0;
+    padding: 0;
     width: 70%; /* Adjust width as needed */
     height: auto;
     cursor: pointer;
@@ -366,5 +392,23 @@ html, body {
   .prev:hover, .next:hover {
     background: rgba(0, 0, 0, 0.8);
   }
+
+
+  /* Text Overlay */
+#text-container {
+    font-family: 'a4speed', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: -3200px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 0;
+}
+
   
 

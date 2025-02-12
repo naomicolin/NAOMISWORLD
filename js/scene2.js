@@ -29,11 +29,11 @@ function init() {
     sceneContainer.appendChild(renderer.domElement);
 
     // Lighting
-    const lightRight = new THREE.DirectionalLight(0xffffff, 4);
-    lightRight.position.set(0, 0, 50);
+    const lightRight = new THREE.DirectionalLight(0xffffff, 5);
+    lightRight.position.set(0, 30, 50);
     scene.add(lightRight);
-    const lightLeft = new THREE.DirectionalLight(0xffffff, 3);
-    lightLeft.position.set(0, 0, 20);
+    const lightLeft = new THREE.DirectionalLight(0xffffff, 10);
+    lightLeft.position.set(30, 0, 20);
     scene.add(lightLeft);
 
     // Camera setup
@@ -45,7 +45,8 @@ function init() {
     audioLoader = new THREE.AudioLoader();
 
     // Load models with their sounds and animations
-    loadModelAndSound('gltf/naomilogo.gltf', [-210, 10, 0], [17, 17, 17]);
+    loadModelAndSound('gltf/naomilogo.gltf', [0, 10, 0], [17, 17, 17]);
+ 
    
     
 
