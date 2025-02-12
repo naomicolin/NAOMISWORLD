@@ -52,6 +52,17 @@ html, body {
 
 }
 
+/* //////ABOUT TEXT////////////////////// */
+#clickable-image3 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 1750px;  /* Distance from the top */
+    right: 500px;
+    transform: scale(6.5);
+}
+
+
 /* //////ELEMENTS////////////////////// */
 #clickable-image2 {
     width: 1000px; 
@@ -63,15 +74,6 @@ html, body {
     transform: scale(1);
 }
 
-/* //////ABOUT TEXT////////////////////// */
-#clickable-image3 {
-    width: 100px;  /* Adjust width */
-    height: auto;  /* Keeps aspect ratio */
-    position: absolute;  /* Allows precise positioning */
-    top: 1700px;  /* Distance from the top */
-    right: 500px;
-    transform: scale(8);
-}
 
 
 
@@ -246,19 +248,38 @@ html, body {
 
 
 
-
-
-
-  
-  /* Video Styling */
-  #my-video {
+/* ///////////VIDEO & IMAGE CONTAINER/////////// */
+#media-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds spacing between video and image */
+    padding: 70px;
     max-width: 100%;
+    height: 1000px;
+    margin-left: 30px; /* Moves entire container to the right */
+}
+
+
+#my-video {
+    width: 50%; /* Adjust size as needed */
     height: auto;
-    border: 10px solid #c92f9b; /* Light gray border */
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 700px; /* Moves video to the right */
+    margin-bottom: -850px; /* Moves video to the right */
+
+}
+
+#clickable-image2 {
+    width: 70%; /* Adjust width as needed */
+    height: auto;
+    cursor: pointer;
+    margin-right: -140px; /* Moves video to the right */
+    margin-top: -90px; /* Moves video to the right */
     
-  }
- 
+}
+
 
   
 
