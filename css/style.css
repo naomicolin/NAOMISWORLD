@@ -74,6 +74,26 @@ html, body {
     transform: scale(1);
 }
 
+/* //////CHECK OUT TEXT///////////////////// */
+#clickable-image4 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3100px;  /* Distance from the top */
+    right: 500px;
+    transform: scale(9);
+}
+
+/* //////PREVIEW TEXT////////////////////// */
+#clickable-image5 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3280px;  /* Distance from the top */
+    right: 1250px;
+    transform: scale(10);
+}
+
 
 
 
@@ -289,93 +309,5 @@ html, body {
 
 
 /* <!-- /////////SLIDESHOW///////////////////////////////////////// --> */
-
-
-#slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    user-select: none;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-
-
-
-
-
-  
-#slideshow-container {
-    max-width: 700px; /* Adjust based on your preference */
-    position: relative;
-    margin: 20px auto; /* Centering the container */
-    margin-top: 680px;
-}
-
-.mySlides {
-    display: none;
-    width: 100%; /* Adjust if you need a different size */
-    height: auto;
-    
-}
-
-
-
-/* Style for navigation arrows */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px; /* Adjust this value based on the size of the arrows */
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Positioning the arrows */
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.next {
-    right: 0;
-    border-radius: 0 3px 3px 0;
-}
-
-/* Hover effects for arrows */
-.prev:hover, .next:hover {
-    background-color: rgba(21, 165, 64, 0.8);
-}
-
 
 

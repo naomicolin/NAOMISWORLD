@@ -102,16 +102,13 @@
       <img src="images/clickonelements.png" alt="Clickable Image" id="clickable-image2">
   </a>
 
+  <img src="images/previewtext.png" id="clickable-image4">
 
-</div>
-
-
-
-
-  <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
- <a href="elements.html">
-    <img src="images/clickonelements.png" alt="Clickable Image" id="clickable-image2">
+  <a href="video.html">
+  <img src="images/clickhere.png" alt="Clickable Image" id="clickable-image5">
   </a>
+
+
 </div>
 
 
@@ -120,44 +117,42 @@
 <!-- //////////////////////////////SLIDESHOW////////////////////////////////////////////////// -->
   
 
-<!-- <div id="slideshow-container">
+<div id="slideshow-container">
   <img class="mySlides" src="images/NV1.png">
   <img class="mySlides" src="images/NV2.png">
   <img class="mySlides" src="images/NV3.png">
   <img class="mySlides" src="images/NV4.png">
-  <img class="mySlides" src="images/NV5.png"> -->
+  <img class="mySlides" src="images/NV5.png"> 
   
    <!-- Navigation Arrows -->
-   <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div> -->
+</div> 
 
-<!-- <script>
+<script>
   var slideIndex = 1;
   showSlides(slideIndex);
-   -->
-  <!-- // Next/previous controls
-  // function plusSlides(n) {
-  //   showSlides(slideIndex += n);
-  // }
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
   
   // Thumbnail image controls
-  // function currentSlide(n) {
-  //   showSlides(slideIndex = n);
-  // }
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
   
   // function showSlides(n) {
-  //   var i;
-  //   var slides = document.getElementsByClassName("mySlides");
-  //   if (n > slides.length) {slideIndex = 1}    
-  //   if (n < 1) {slideIndex = slides.length}
-  //   for (i = 0; i < slides.length; i++) {
-  //       slides[i].style.display = "none";  
-  //   }
-  //   slides[slideIndex-1].style.display = "block";  
-  // } -->
-  <!-- // </script> -->
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+  
+  </script>
 
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
