@@ -94,6 +94,109 @@ html, body {
 }
 
 
+
+/* //////FLOATING IMAGES////////////////////// */
+
+/* //////PAYHERE//////////// */
+#clickable-image7 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3050px;  /* Distance from the top */
+    right: 360px;
+    transform: scale(8);
+}
+
+/* //////PINK ICON//////////// */
+#clickable-image8 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3650px;  /* Distance from the top */
+    right: 160px;
+    transform: scale(2.6);
+}
+
+/* //////GREEN ICON HEAD//////////// */
+#clickable-image9 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3180px;  /* Distance from the top */
+    right:800px;
+    transform: scale(2);
+}
+
+
+/* //////fixture//////////// */
+#clickable-image11 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3130px;  /* Distance from the top */
+    right: 1110px;
+    transform: scale(4.5);
+}
+
+/* //////MERCH//////////// */
+#clickable-image10 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3800px;  /* Distance from the top */
+    right: 970px;
+    transform: scale(8.5);
+}
+
+/* //////BASKETS//////////// */
+#clickable-image6 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3900px;  /* Distance from the top */
+    right: 300px;
+    transform: scale(7);
+}
+
+/* //////texticon//////////// */
+#clickable-image12 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 1600px;  /* Distance from the top */
+    right: 1150px;
+    transform: scale(2.5);
+}
+
+/* //////madicon//////////// */
+#clickable-image13 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 1550px;  /* Distance from the top */
+    right: 200px;
+    transform: scale(2.5);
+}
+
+/* //////learn more ICON//////////// */
+#clickable-image14 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3680px;  /* Distance from the top */
+    right: 450px;
+    transform: scale(4);
+}
+
+
+
+
+
+
+
+
+
+
 /* /////////////ABOUT TEXT////////////////// */
 #text-box {
     line-height: 1.;    /* Adjust value as needed */
