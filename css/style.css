@@ -48,7 +48,7 @@ html, body {
     top: 1650px;  /* Distance from the top */
     left: 530px;  /* Distance from the left */
     
-    transform: scale(1.2); /* Reduces the image to 80% of its original size */
+    transform: scale(0.5); /* Reduces the image to 80% of its original size */
 
 }
 
@@ -65,12 +65,12 @@ html, body {
 
 /* //////ABOUT////////////////////// */
 #clickable-image3 {
-    width: 1000px;  /* Adjust width */
+    width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3800px;  /* Distance from the top */
-    right: 650px;
-    transform: scale(1.5);
+    top: 3600px;  /* Distance from the top */
+    right: 1200px;
+    transform: scale(17);
 }
 
 
