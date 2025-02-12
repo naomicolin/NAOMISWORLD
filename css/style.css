@@ -189,6 +189,27 @@ html, body {
 }
 
 
+/* //////learn more ICON//////////// */
+#clickable-image15 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 500px;  /* Distance from the top */
+    right: 150px;
+    transform: scale(3);
+}
+
+/* //////under//////////// */
+#clickable-image16 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 100px;  /* Distance from the top */
+    right: 850px;
+    transform: scale(9);
+}
+
+
 
 
 
@@ -218,6 +239,8 @@ html, body {
     margin-bottom: 10px; /* Adds space below the title */
     color:  #e7039d; /* Adjust color as needed */
 }
+
+
 
 
 
@@ -361,7 +384,7 @@ html, body {
     width: 100vw; /* Full viewport width */
     height: 101vh; /* Set a fixed height greater than 100vh to enable scrolling */
     background-color: #e461c1; 
-    background-color: transparent;
+    
 
 }
 
