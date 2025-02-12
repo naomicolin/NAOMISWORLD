@@ -45,7 +45,7 @@ function init() {
     audioLoader = new THREE.AudioLoader();
 
     // Load models with their sounds and animations
-    loadModelAndSound('/3d/naomilogo.gltf', [-130, -5, 0], [10, 10, 10]);
+    loadModelAndSound('/3d/naomilogo.gltf', [-190, 25, 0], [15, 15, 15]);
    
     
 

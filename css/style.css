@@ -53,24 +53,24 @@ html, body {
 }
 
 /* //////ELEMENTS////////////////////// */
-/* #clickable-image2 {
+#clickable-image2 {
     width: 1000px; 
     height: auto; 
     position: absolute;  
-    top: 4800px;  
-    right: 700px;  
+    top: 2000px;  
+    right: 250px;  
     cursor: pointer; 
-    transform: scale(2);
-} */
+    transform: scale(1);
+}
 
-/* //////ABOUT////////////////////// */
+/* //////ABOUT TEXT////////////////////// */
 #clickable-image3 {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3600px;  /* Distance from the top */
-    right: 1200px;
-    transform: scale(17);
+    top: 1700px;  /* Distance from the top */
+    right: 500px;
+    transform: scale(8);
 }
 
 
@@ -94,7 +94,7 @@ html, body {
 
 /* ///////NAOMI'S LATEST & VR GAME////////// */
 .marquee1 p {
-    line-height: 450px;
+    line-height: 10px;
     font-size: 90px;
     font-family: 'a4speed', sans-serif; 
     color: #e7039d;
@@ -228,9 +228,8 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100vw; /* Full viewport width */
-    height: 80vh; /* Set a fixed height greater than 100vh to enable scrolling */
-    background-color: transparent; /* Makes the container's background transparent */
-
+    height: 50vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    
 }
 
 
@@ -250,19 +249,6 @@ html, body {
 
 
 
-
-
-
-
-/* Container Styling */
-#media-container {
-    display: flex;
-    align-items: center; /* Vertically centers items */
-    justify-content: center; /* Horizontally centers items */
-    gap: 10px; /* Space between video and image */
-   
-    
-  }
   
   /* Video Styling */
   #my-video {
@@ -272,15 +258,7 @@ html, body {
     border-radius: 5px;
     
   }
-  
-  /* Clickable Image Styling */
-  #clickable-image2 {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    
-   
-  }
+ 
 
   
 
