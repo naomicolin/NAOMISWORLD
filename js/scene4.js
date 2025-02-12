@@ -20,8 +20,8 @@ let mixers = [];
 function init() {
     scene = new THREE.Scene();
     clock = new THREE.Clock();
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 5000);
-    camera.position.set(0, 0, 10);
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
+
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -37,7 +37,7 @@ function init() {
     scene.add(lightLeft);
 
     // Camera setup
-    camera.position.z = 30;
+    camera.position.z = 100;
 
     // Audio setup
     listener = new THREE.AudioListener();

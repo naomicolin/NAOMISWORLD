@@ -33,8 +33,8 @@
     <script type="module" src="js/scene1.js"></script>
     <script type="module" src="js/scene2.js"></script>
     <script type="module" src="js/scene4.js"></script>
-    <script type="module" src="js/scene5.js"></script>
-    <script type="module" src="js/scene6.js"></script>
+    <script type="module" src="elements.html"></script>
+    
     
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
@@ -59,16 +59,11 @@
         <!-- /////////MARQUEES/////// -->
          <div class="marquee marquee1">
           <p>THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST.
-            THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST.
-          THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST.
-            THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST.
-          </p>
-      </div>
+            THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST. THE LATEST.</p>
     </div>
 
       <div class="marquee marquee2">
         <p>VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME. VR GAME.</p>
-    </div>
   </div>
 
 
@@ -83,15 +78,20 @@
 
 
 
-      <!-- //////////////////////////////////EMBEDDED VIDEO////////////////////////////////////////////// -->
-<video id="my-video" autoplay muted loop>
-  <source src="images/NVGAMEDEMO.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<!-- //////////////////////////////////EMBEDDED VIDEO////////////////////////////////////////////// -->
+<div id="media-container">
+  <!-- Embedded Video -->
+  <video id="my-video" autoplay muted loop>
+    <source src="images/NVGAMEDEMO.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-   <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
-   <a href="elements.html">
+  <!-- /////////CLICK ELEMENTS CONTAINER/////// -->
+  <a href="elements.html">
     <img src="images/clickonelements.png" alt="Clickable Image" id="clickable-image2">
+  </a>
+</div>
+
 
 
 
