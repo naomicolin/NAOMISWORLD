@@ -13,6 +13,36 @@ let listener, audioLoader;
 // Animation mixers
 let mixers = [];
 
+// Draggable objects array
+let draggableObjects = [];
+
+// Initialize the Loading Manager
+const loadingManager = new THREE.LoadingManager();
+
+// Define the loading screen element
+const loadingScreen = document.getElementById('loading-screen');
+
+// Set up callback functions for the Loading Manager
+loadingManager.onStart = function (url, itemsLoaded, itemsTotal) {
+    console.log(`Started loading file: ${url}. Loaded ${itemsLoaded} of ${itemsTotal} files.`);
+    // Display the loading screen when loading starts
+    loadingScreen.style.display = 'block';
+};
+
+loadingManager.onLoad = function () {
+    console.log('All assets loaded.');
+    // Hide the loading screen when all assets are loaded
+    loadingScreen.style.display = 'none';
+};
+
+loadingManager.onProgress = function (url, itemsLoaded, itemsTotal) {
+    console.log(`Loading file: ${url}. Loaded ${itemsLoaded} of ${itemsTotal} files.`);
+};
+
+loadingManager.onError = function (url) {
+    console.log(`There was an error loading ${url}`);
+};
+
 function init() {
     scene = new THREE.Scene();
     clock = new THREE.Clock();
@@ -42,7 +72,6 @@ function init() {
 
     // Load models with their sounds and animations
     loadModelAndSound('gltf/clicktvs.gltf', [277, -90, 0], [19, 19, 19]);
-    
 
     animate();
 }

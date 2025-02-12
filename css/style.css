@@ -139,7 +139,7 @@ html, body {
     color: #37d813;
     animation: marquee2 25s linear infinite;
     margin: 0;
-    padding: 850px 0 0 0; /* Adds 20px padding to the top */
+    padding: 350px 0 0 0; /* Adds 20px padding to the top */
 }
 
   
@@ -220,7 +220,7 @@ html, body {
 /* /////CLICK TV//// */
 #scene-container1 {
     width: 100vw; /* Full viewport width */
-    height: 50vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    height: 60vh; /* Set a fixed height greater than 100vh to enable scrolling */
 }
 
 /* /////ABOUT NAOMI VISION//// */
@@ -228,7 +228,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100vw; /* Full viewport width */
-    height: 50vh; /* Set a fixed height greater than 100vh to enable scrolling */
+    height: 30vh; /* Set a fixed height greater than 100vh to enable scrolling */
     
 }
 
