@@ -112,7 +112,7 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3850px;  /* Distance from the top */
+    top: 3820px;  /* Distance from the top */
     right: 160px;
     transform: scale(2.4);
 }
@@ -125,6 +125,16 @@ html, body {
     top: 3350px;  /* Distance from the top */
     right:310px;
     transform: scale(1.7);
+}
+
+/* //////BUY NOW PINK LONG FIXTURE/////////// */
+#clickable-image19 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 5000px;  /* Distance from the top */
+    right:400px;
+    transform: scale(10);
 }
 
 
@@ -143,9 +153,9 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 4500px;  /* Distance from the top */
-    right: 970px;
-    transform: scale(8.5);
+    top: 4550px;  /* Distance from the top */
+    right: 900px;
+    transform: scale(9);
 }
 
 /* //////BASKETS//////////// */
@@ -153,8 +163,8 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 4120px;  /* Distance from the top */
-    right: 370px;
+    top: 4150px;  /* Distance from the top */
+    right: 320px;
     transform: scale(7);
 }
 
@@ -183,8 +193,8 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3900px;  /* Distance from the top */
-    right: 550px;
+    top: 3880px;  /* Distance from the top */
+    right: 590px;
     transform: scale(7);
 }
 
@@ -229,6 +239,25 @@ html, body {
     transform: scale(2.5);
 }
 
+/* //////GREEN BAG//////////// */
+#clickable-image20 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 4535px;  /* Distance from the top */
+    right: 300px;
+    transform: scale(7);
+}
+
+/* //////HEART SUNGLASSES//////////// */
+#clickable-image21 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 5000px;  /* Distance from the top */
+    right: 1050px;
+    transform: scale(5.5);
+}
 
 
 
@@ -253,6 +282,26 @@ html, body {
 }
 
 .text-title {
+    font-family: 'A4Speed', sans-serif; /* Your custom font */
+    font-size: 2.5rem; /* Adjust for larger title */
+    font-weight: bold; /* Makes the title stand out */
+    margin-bottom: 10px; /* Adds space below the title */
+    color:  #e7039d; /* Adjust color as needed */
+}
+
+#text-box2 {
+    line-height: 1;    /* Adjust value as needed */
+    font-family: 'A4Speed', sans-serif;
+    font-size: 0.9rem; /* Adjust as needed */
+    color: #252424;
+    padding: 70px;
+    width: 45%;
+    margin-top: -150px;
+    
+}
+
+.text-title2 {
+    line-height: 1; 
     font-family: 'A4Speed', sans-serif; /* Your custom font */
     font-size: 2.5rem; /* Adjust for larger title */
     font-weight: bold; /* Makes the title stand out */
@@ -507,7 +556,7 @@ html, body {
   
   /* Video container */
   #video-container {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
   }
