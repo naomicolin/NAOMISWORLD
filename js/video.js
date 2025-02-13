@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sceneContainer.style.justifyContent = "center";
     sceneContainer.style.alignItems = "center";
     sceneContainer.style.height = "100vh";
+    sceneContainer.style.width= "100vw";
     sceneContainer.style.position = "relative"; // Allows absolute positioning inside
 
     // Create video element
@@ -18,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
     video.autoplay = true;
     video.muted = true;
     video.loop = true;
-    video.controls = true; // Add default controls
-    video.style.width = "80%";
+    
+    video.style.width = "60%";
     video.style.height = "auto";
     video.style.display = "block";
     video.style.margin = "0 auto"; // Centers the video horizontally

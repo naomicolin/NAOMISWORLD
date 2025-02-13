@@ -78,9 +78,9 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 3000px;  /* Distance from the top */
+    top: 2990px;  /* Distance from the top */
     right: 390px;
-    transform: scale(8);
+    transform: scale(7);
 }
 
 /* //////CLICK HERE FOR PREVIEW TEXT////////////////////// */
@@ -173,22 +173,33 @@ html, body {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 1750px;  /* Distance from the top */
+    top: 1660px;  /* Distance from the top */
     right: 1150px;
     transform: scale(2.5);
 }
 
-/* //////madicon//////////// */
+/* //////BIO//////////// */
+#clickable-image23 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 1580px;  /* Distance from the top */
+    right: 250px;
+    transform: scale(2.2);
+}
+
+
+/* //////SADmadicon//////////// */
 #clickable-image13 {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
     position: absolute;  /* Allows precise positioning */
-    top: 1700px;  /* Distance from the top */
-    right: 200px;
-    transform: scale(2.5);
+    top: 2100px;  /* Distance from the top */
+    right: 100px;
+    transform: scale(2);
 }
 
-/* //////learn more ICON//////////// */
+/* //////VIEW VR//////////// */
 #clickable-image14 {
     width: 100px;  /* Adjust width */
     height: auto;  /* Keeps aspect ratio */
@@ -259,6 +270,16 @@ html, body {
     transform: scale(5.5);
 }
 
+/* //////design process//////////// */
+#clickable-image22 {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Keeps aspect ratio */
+    position: absolute;  /* Allows precise positioning */
+    top: 3825px;  /* Distance from the top */
+    right: 650px;
+    transform: scale(4);
+}
+
 
 
 
@@ -296,7 +317,7 @@ html, body {
     color: #252424;
     padding: 70px;
     width: 45%;
-    margin-top: -150px;
+    margin-top: -120px;
     
 }
 
